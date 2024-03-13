@@ -47,16 +47,19 @@ Loader.shared.onComplete.add(()=>{
 
 	warrior.x = 100;
 	warrior.y = 0;
-	sword.x = 100;
-	sword.y = 0;
+	sword.x = 240;
+	sword.y = 200;
+
+	sword.angle = -58;
 
 	warrior.scale.x = .5;
 	warrior.scale.y = .5;
 	sword.scale.x = .5;
 	sword.scale.y = .5;
 
-	app.stage.addChild(warrior);
+	
 	app.stage.addChild(sword);
+	app.stage.addChild(warrior);
 
 });
 
