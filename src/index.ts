@@ -1,4 +1,6 @@
-import { Application, Loader, Sprite } from 'pixi.js';
+import { Application, Loader } from 'pixi.js';
+import { assets } from './assets';
+import { Scene } from './Scene';
 
 
 const app = new Application({
@@ -35,32 +37,12 @@ window.addEventListener("resize", ()=>{
 window.dispatchEvent(new Event("resize"));
 
 
-Loader.shared.add({url: "./warrior.png", name: "myWarrior"});
-Loader.shared.add({url: "./sword.png", name: "mySword"});
+Loader.shared.add(assets);
 
 Loader.shared.onComplete.add(()=>{
-	const warrior: Sprite = Sprite.from("myWarrior");
-	const sword: Sprite = Sprite.from("mySword");
+	const myScene = new Scene();
+	app.stage.addChild(myScene);
 	
-
-	//clampy.anchor.set(0.5);
-
-	warrior.x = 100;
-	warrior.y = 0;
-	sword.x = 240;
-	sword.y = 200;
-
-	sword.angle = -58;
-
-	warrior.scale.x = .5;
-	warrior.scale.y = .5;
-	sword.scale.x = .5;
-	sword.scale.y = .5;
-
-	
-	app.stage.addChild(sword);
-	app.stage.addChild(warrior);
-
 });
 
 Loader.shared.load();
