@@ -1,6 +1,6 @@
 import { Application, Loader } from 'pixi.js';
 import { assets } from './assets';
-import { Scene } from './Scene';
+import { SceneLevelComplete } from './SceneLevelComplete';
 
 
 const app = new Application({
@@ -40,8 +40,9 @@ window.dispatchEvent(new Event("resize"));
 Loader.shared.add(assets);
 
 Loader.shared.onComplete.add(()=>{
-	const myScene = new Scene();
-	app.stage.addChild(myScene);
+
+	const mySceneLevelComplete = new SceneLevelComplete();
+	app.stage.addChild(mySceneLevelComplete);
 	
 });
 

@@ -13,6 +13,9 @@ export const assets = [
     {url: "./levelcomplete/BoxesBanners/Box_Orange_Rounded.png", name: "BoxOrangeRounded"},
     {url: "./levelcomplete/BoxesBanners/Banner_Orange.png", name: "BannerOrange"},
     {url: "./levelcomplete/BoxesBanners/Box_Orange_Square.png", name: "BoxOrangeSquare"},
+    {url: "./levelcomplete/ButtonsIcons/IconButton_Large_Orange_Square.png", name: "IconButtonLargeOrangeSquare"},
+    {url: "./levelcomplete/Icons/Icon_Small_WhiteOutline_Star.png", name: "GoldenStar"},
+    {url: "./levelcomplete/Icons/Icon_Small_WhiteOutline_StarGrey.png", name: "GreyStar"},
 
 
 ];
