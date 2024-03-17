@@ -1,5 +1,5 @@
 import { AnimatedSprite, Container, Graphics, Texture, Text } from "pixi.js";
-import { WarriorSword } from "./WarriorSword";
+import { WarriorSword } from "../Game/WarriorSword";
 
 export class Scene extends Container {
 

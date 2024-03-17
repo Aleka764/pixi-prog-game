@@ -1,6 +1,6 @@
 import { Application, Loader } from 'pixi.js';
 import { assets } from './assets';
-import { SceneLevelComplete } from './SceneLevelComplete';
+import { SceneLevelComplete } from './Scenes/SceneLevelComplete';
 
 
 const app = new Application({
